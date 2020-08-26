@@ -1,15 +1,25 @@
 <div class="container">
 	<div class="row">
- 	 <div class="col text-center">
-
- 	 	<h2>welcome to <span class="glyphicon glyphicon-book" aria-hidden="true"></span>Bookers !!</h2>
- 	 	<h4>In <span class="glyphicon glyphicon-book" aria-hidden="true"></span>Bookers,<br>
-		you can share and exchange your opinions , inpressions , and emotions<br>
-	 	about various books!</h4>
-	 	<%= link_to "Log in", new_user_session_path, class: 'btn btn-info' %><br>
-	 	<%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-success' %>
+ 	 <div class='col-xs-6 col-xs-offset-3' >
+ 	  
+ 	  <% if flash[:notice] %>
+       <div class="flash">
+        <%= flash[:notice] %>
+       </div>
+      <% end %>
+ 	 	
+ 	 	<h1>welcome to <span class="glyphicon glyphicon-book" aria-hidden="true"></span>Bookers !!</h1>
+ 	 	<div class="text-left">In <span class="glyphicon glyphicon-book" aria-hidden="true"></span>Bookers,<br>
+			you can share and exchange your opinions , inpressions , and emotions<br>
+	 		about various books!</div>
+	 	<div class="row">
+	 		<%= link_to "Log in", new_user_session_path, class: 'btn btn-info col-xs-12' %>
+	    </div>
+	 	<div class="row">
+	 		<%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-success col-xs-12' %>
+	 	</div>
 	 </div>
 
- 	 </div>
+ 	 
 	</div>
 </div>

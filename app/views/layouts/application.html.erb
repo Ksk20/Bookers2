@@ -14,7 +14,7 @@
       <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Bookers</a>
+      <h3 class="navbar-brand" >Bookers</h3>
     </div>
     <ul class="nav navbar-nav navbar-right">
       <% if user_signed_in? %>
@@ -38,8 +38,21 @@
       <% end %>
     </ul>
   </div>
-</nav>
-    </div>
+ </nav>
+
+
+</footer>
+
     <%= yield %>
+
+    </div>
+ <div class="container">
+  <div class="row">
+    <div class="col-xs-3 col-xs-offset-9">
+      <p>CopyRight Infratop.inc</p>
+    </div>
+  </div>
+ </div>
+  <!-- Copyright -->
   </body>
 </html>
